@@ -1,13 +1,11 @@
-# 蓓养乐沙友试用跟踪计划
+# 蓓养乐沙友试用跟踪
 
-静态分享入口，适用于 GitHub Pages。数据填写和收集通过组织者已发布的腾讯问卷完成。
+GitHub Pages 托管独立表单，Supabase 托管数据。参与者无需离开页面。
 
-页面和图片均使用相对路径，支持 GitHub Pages 项目子目录。没有 localhost 地址、数据库凭据或参与者记录。
+支持登记、续填码、D1–D7每日记录、基线和一周追踪，以及组织者汇总和CSV导出。
 
-发布：将本目录中的文件上传到仓库 main 分支，在 Settings → Pages 选择 Deploy from a branch，选择 main / (root)，保存。
+config.js 仅含 Supabase 公开 publishable key；后台数据表放在不公开的schema中，只通过校验续填码的接口访问。管理员口令不在网页文件中。
 
-登记： https://wj.qq.com/s2/28172618/zer2/
+页面：https://euphorialhb.github.io/beiyangle-runner-trial/
 
-每日： https://wj.qq.com/s2/28172743/y4s0/
-
-一周后： https://wj.qq.com/s2/28172783/qziu/
+开发源文件和数据库schema保存在本地项目 output/native-form。
